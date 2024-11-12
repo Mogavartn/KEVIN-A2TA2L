@@ -20,8 +20,8 @@ const HomeOne = () => {
             <HeaderOne />
             <BannerOne />
             <About />
-            <ChooseUs />
             <Features />
+            <ChooseUs />
             <Portfolio />
             <Pricing />
             <WorkArea />

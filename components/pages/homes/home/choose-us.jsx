@@ -10,7 +10,7 @@ const ChooseUs = () => {
                     <div className="col-xl-6 col-lg-7 col-md-9">
                         <div className="why-choose-us__one-left">
                             <div className="why-choose-us__one-title">
-                                <span className="subtitle-one">Why Chose Us</span>
+                                <span className="subtitle-one">Pourquoi nous choisir</span>
                                 <h2>Tailored IT Strategies for Your Business</h2>
                                 <p>Craft personalized action plans harnessing the latest IT innovations to support your business objectives driving growth advantage</p>
                             </div>

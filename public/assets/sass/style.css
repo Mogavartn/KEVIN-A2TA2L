@@ -444,6 +444,7 @@ p {
 
 .btn-one,
 .btn-two,
+.btn-two1,
 .btn-three,
 .btn-four,
 .btn-five,
@@ -471,6 +472,7 @@ p {
 }
 .btn-one i,
 .btn-two i,
+.btn-two1 i,
 .btn-three i,
 .btn-four i,
 .btn-five i,
@@ -486,6 +488,7 @@ p {
 }
 .btn-one:hover,
 .btn-two:hover,
+.btn-two1:hover,
 .btn-three:hover,
 .btn-four:hover,
 .btn-five:hover,
@@ -498,6 +501,7 @@ p {
 }
 .btn-one:hover i,
 .btn-two:hover i,
+.btn-two1:hover i,
 .btn-three:hover i,
 .btn-four:hover i,
 .btn-five:hover i,
@@ -513,6 +517,7 @@ p {
   background: var(--primary-color-1);
   color: var(--text-white);
   text-transform: none;
+  margin-right: 10px;
 }
 .btn-two:hover {
   background-color: transparent;
