@@ -14,6 +14,8 @@ import Blog from "./blog";
 import Testimonial from "./testimonial";
 import ContactAc from "../../contacts/contactaccueil";
 import Video from "./video";
+import ContactForm from "./contact-form";
+import Tab from "./tab/tab";
 
 const HomeOne = () => {
     return (
@@ -27,7 +29,7 @@ const HomeOne = () => {
             <Testimonial />
             <Portfolio />
             <Video />
-            <Pricing />
+            <Tab />
             <WorkArea />
             <Blog />
             <ContactAc />

@@ -36,13 +36,13 @@ const Portfolio = () => {
                 <div className="row gy-4 align-items-end justify-content-between mb-5">
                     <div className="col-xl-6 col-lg-7 col-md-9 col-sm-10">
                         <div className="portfolio__one-content-left">
-                            <span className="subtitle-one">Tech Portfolio</span>
-                            <h2>Case Studies in Ingenious IT Portfolio</h2>
+                            <span className="subtitle-one">Portfolio d'Expertise</span>
+                            <h2>Études de Cas en Solutions Innovantes</h2>
                         </div>
                     </div>
                     <div className="col-xl-3 col-lg-4">
                         <div className="portfolio__one-content-right text-lg-end">
-                            <Link href="/portfolio/3-columns" className="btn-one">All Portfolio<i className="fas fa-arrow-right"></i></Link>
+                            <Link href="/portfolio/3-columns" className="btn-one">Tout le Portfolio<i className="fas fa-arrow-right"></i></Link>
                         </div>
                     </div>
                 </div>
