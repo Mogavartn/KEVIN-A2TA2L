@@ -22,18 +22,18 @@ const ChooseFour = () => {
                                         <h4>entrepreneurs accompagnés</h4>
                                     </div>
                                     <div className="why-choose-us__three-bottom-card-counter">
-                                        <h4 className="counter">+<Count number={143}/></h4>
-                                        <h4>k</h4>
+                                    <h4>+</h4>
+                                        <h4 className="counter"><Count number={500}/></h4>
                                     </div>
                                 </div>
                                 <div className="why-choose-us__three-bottom-card">
                                     <div className="why-choose-us__three-bottom-card-content">
                                         <i className="flaticon-data-scientist"></i>
-                                        <h4>Unmatched IT Excellence</h4>
+                                        <h4>Accompagnement sur-mesure pour particuliers</h4>
                                     </div>
                                     <div className="why-choose-us__three-bottom-card-counter">
-                                        <h4 className="counter"><Count number={230}/></h4>
-                                        <h4>+</h4>
+                                    <h4>+</h4>
+                                        <h4 className="counter"><Count number={1000}/></h4>
                                     </div>
                                 </div>
                             </div>

@@ -13,6 +13,7 @@ import FooterOne from "@/components/layout/footers/footer-one";
 import Blog from "./blog";
 import Testimonial from "./testimonial";
 import ContactAc from "../../contacts/contactaccueil";
+import Video from "./video";
 
 const HomeOne = () => {
     return (
@@ -23,10 +24,11 @@ const HomeOne = () => {
             <About />
             <Features />
             <ChooseUs />
+            <Testimonial />
             <Portfolio />
+            <Video />
             <Pricing />
             <WorkArea />
-            <Testimonial />
             <Blog />
             <ContactAc />
             <FooterOne />

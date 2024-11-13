@@ -37,9 +37,9 @@ const slideControl = {
                     <div className="col-xl-6 col-lg-6">
                         <div className="testimonial__one-left" style={{backgroundImage: `url(${testimonialBg.src})`}}>
                             <div className="testimonial__one-left-title">
-                                <span className="subtitle-one">Client Testimonial</span>
-                                <h2>WebTech Solutions the <span className="highlighted">transfor</span> </h2>
-                                <Link href="/contact" className="btn-one">Get Support
+                                <span className="subtitle-one">Témoignage client</span>
+                                <h2>Découvrez ce que disent nos clients ! <span className="highlighted">transfor</span> </h2>
+                                <Link href="/contact" className="btn-one">Obtenir de l'aide
                                     <i className="fas fa-arrow-right"></i>
                                 </Link>
                             </div>
