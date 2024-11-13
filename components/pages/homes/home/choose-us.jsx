@@ -1,56 +1,55 @@
-import image1 from "../../../../public/assets/img/why-choose-us/why-choose.png";
-import image2 from "../../../../public/assets/img/shape/why-choose-shape.png";
+import image1 from "../../../../public/assets/img/why-choose-us/why-choose-2.png";
+import image2 from "../../../../public/assets/img/why-choose-us/why-choose.png";
+import Count from "../../common/count";
 
-const ChooseUs = () => {
+const ChooseFour = () => {
     return (
         <>
-        <div className="why-choose-us__one section-padding">
+        <div className="why-choose-us__three section-padding">
             <div className="container">
-                <div className="row gy-4 align-items-center">
-                    <div className="col-xl-6 col-lg-7 col-md-9">
-                        <div className="why-choose-us__one-left">
-                            <div className="why-choose-us__one-title">
+                <div className="row gy-4">
+                    <div className="col-xl-6 col-lg-6 col-md-10">
+                        <div className="why-choose-us__three-left">
+                            <div className="why-choose-us__three-title">
                                 <span className="subtitle-one">Pourquoi nous choisir</span>
-                                <h2>Tailored IT Strategies for Your Business</h2>
-                                <p>Craft personalized action plans harnessing the latest IT innovations to support your business objectives driving growth advantage</p>
+                                <h2>Une approche unique pour réussir vos projets</h2>
+                                <p>Avec plus de 2100 entrepreneurs accompagnés, notre méthode Ikigai vous aide à aligner passion, talents et valeurs. De plus, nous proposons des solutions de financement accessibles, sans reste à charge dans certains cas.</p>
                             </div>
-                            <div className="why-choose-us__one-quality">
-                                <div className="why-choose-us__one-quality-single">
-                                    <div className="icon">
-                                        <i className="flaticon-machine-repair"></i>
+                            <div className="why-choose-us__three-bottom">
+                                <div className="why-choose-us__three-bottom-card">
+                                    <div className="why-choose-us__three-bottom-card-content">
+                                        <i className="flaticon-web-research"></i>
+                                        <h4>entrepreneurs accompagnés</h4>
                                     </div>
-                                    <div className="why-choose-us__one-quality-single-content">
-                                        <h4>Innovative Tech Leader</h4>
-                                        <p>Harness ingenuity and foresight, we consistently pioneer advanced solutions that set industry</p>
+                                    <div className="why-choose-us__three-bottom-card-counter">
+                                        <h4 className="counter">+<Count number={143}/></h4>
+                                        <h4>k</h4>
                                     </div>
                                 </div>
-                                <div className="why-choose-us__one-quality-single">
-                                    <div className="icon">
-                                        <i className="flaticon-web-research"></i>
+                                <div className="why-choose-us__three-bottom-card">
+                                    <div className="why-choose-us__three-bottom-card-content">
+                                        <i className="flaticon-data-scientist"></i>
+                                        <h4>Unmatched IT Excellence</h4>
                                     </div>
-                                    <div className="why-choose-us__one-quality-single-content">
-                                        <h4>Reliable Global Support</h4>
-                                        <p>Day or night, our global support team stands ready, providing reliable assistance and technical</p>
+                                    <div className="why-choose-us__three-bottom-card-counter">
+                                        <h4 className="counter"><Count number={230}/></h4>
+                                        <h4>+</h4>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div className="col-xl-5 offset-xl-1 col-lg-6 col-md-10">
-                        <div className="why-choose-us__one-image">
-                            <div className="why-choose-us__one-image-shape">
-                                <div className="shape shape-1 animate-x-axis"></div>
-                                <div className="shape shape-2 animate-x-axis"></div>
-                                <img src={image2.src} alt="image" className="shape shape-3 animate-y-axis" />
-                            </div>
-                            <img src={image1.src} alt="image" />
+                        <div className="why-choose-us__three-image">
+                            <img src={image1.src} alt="image" className="why-choose-us__three-floating-image animate-y-axis-slider" />
+                            <img src={image2.src} alt="image" />
                         </div>
                     </div>
                 </div>
             </div>
-        </div>        
+        </div>         
         </>
     );
 };
 
-export default ChooseUs;
+export default ChooseFour;

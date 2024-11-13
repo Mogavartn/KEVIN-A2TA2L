@@ -6687,6 +6687,215 @@ Responsive Menu Css
   }
 }
 /*==========================================================================
+* Contact Acc CSS / Archange
+==========================================================================*/
+.contact__acc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 0;
+}
+
+.contact__acc .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contact__acc .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact__acc-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.contact__acc-title h2 {
+  text-transform: none;
+  margin-bottom: 30px;
+  text-align: center; /* Centrer le titre */
+}
+
+.contact__acc-title p {
+  color: var(--color-2);
+  margin-bottom: 35px;
+  text-transform: none;
+  text-align: center; /* Centrer le texte */
+}
+
+.contact__acc-form textarea {
+  margin-bottom: 30px;
+  height: 130px;
+}
+
+.contact__acc-form .btn-acc {
+  border-radius: 5px;
+  border: 1px solid var(--primary-color-1);
+}
+
+.contact__acc-contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centrer les informations de contact */
+  align-items: center;
+  gap: 30px; /* Espacement uniforme entre les items */
+}
+
+.contact__acc-single-info {
+  background-color: var(--color-1);
+  padding: 30px 5px;
+  border-radius: 5px;
+  transition: 0.4s;
+  text-align: center;
+  width: 45%;
+  margin-bottom: 28px;
+}
+
+.contact__acc-single-info-icon {
+  background-color: var(--bg-white);
+  width: 65px;
+  height: 65px;
+  border-radius: 5px;
+  margin: auto;
+  margin-bottom: 15px;
+  text-align: center;
+  line-height: 65px;
+}
+
+.contact__acc-single-info-content h4 {
+  font-size: 22px;
+  margin-bottom: 7px;
+}
+
+.contact__acc-single-info-content span {
+  color: var(--color-2);
+  display: block;
+  font-size: 14px;
+  text-transform: none;
+  margin-bottom: 7px;
+}
+
+.contact__acc-single-info-content span:last-child {
+  margin-bottom: 0;
+}
+
+.contact__acc-single-info:last-child {
+  margin-bottom: 0;
+}
+
+.contact__acc-single-info:nth-last-child(2) {
+  margin-bottom: 0;
+}
+
+.contact__acc-single-info:hover {
+  transform: translateY(-5px);
+}
+
+/* Media Queries for responsive design */
+@media (max-width: 1399px) {
+  .contact__acc-single-info {
+    width: 46%; /* Ajuster la largeur pour plus d'espace sur des écrans plus petits */
+  }
+}
+
+@media (max-width: 1199px) {
+  .contact__acc-single-info {
+    width: 35%;
+    padding: 30px 46px;
+  }
+}
+
+@media (max-width: 991px) {
+  .contact__acc-single-info {
+    width: 45%;
+  }
+}
+
+@media (max-width: 767px) {
+  .contact__acc-single-info {
+    width: 100%;
+    margin-bottom: 15px; /* Ajouter un peu de marge en bas */
+  }
+
+  .contact__acc-title h2 {
+    font-size: 24px; /* Taille de police plus petite sur mobile */
+  }
+
+  .contact__acc-title p {
+    font-size: 16px; /* Ajuster la taille du texte */
+  }
+
+  .contact__acc-form textarea {
+    width: 100%; /* S'assurer que le textarea prend toute la largeur */
+  }
+}
+/*==========================================================================
+* Form acc / Archange
+===========================================================================*/
+.contactacc__form-area-item input,
+.contactacc__form-area-item select,
+.contactacc__form-area-item textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--primary-color-1);
+    font-size: 14px;
+}
+
+.contactacc__form-area-item select {
+    appearance: none; /* Pour enlever le style par défaut des navigateurs */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.contactacc__form-area-item input[type="tel"] {
+    -webkit-appearance: input; /* S'assurer que le clavier pour le téléphone soit adapté sur mobile */
+}
+
+.contactacc__form-area-item textarea {
+    resize: vertical;
+    height: 150px;
+}
+/* Ajouter du style à la liste déroulante avec l'icône */
+.contactacc__form-area-item.custom-select {
+  position: relative;
+}
+
+.contactacc__form-area-item.custom-select select {
+  width: 100%;
+  padding: 10px 40px 10px 10px;
+  border-radius: 5px;
+  border: 1px solid var(--primary-color-1);
+  font-size: 14px;
+  appearance: none; /* Supprimer l'apparence native */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.contactacc__form-area-item.custom-select i.fas {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: var(--primary-color-1);
+  pointer-events: none; /* L'icône ne doit pas interférer avec l'interaction */
+}
+
+/* Ajouter un style de focus pour la sélection */
+.contactacc__form-area-item.custom-select select:focus {
+  border-color: var(--primary-color-2); /* Changer la couleur de la bordure lorsque le champ est sélectionné */
+}
+
+
+/*==========================================================================
 * Contact Location Map 
 ==========================================================================*/
 .location-map {
