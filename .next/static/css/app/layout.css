@@ -7997,15 +7997,23 @@ Responsive Menu Css
 /*==========================================================================
 * Form acc / Archange
 ===========================================================================*/
+.contactacc__form-area-item{
+    padding: 0;
+}
+
 .contactacc__form-area-item input,
 .contactacc__form-area-item select,
 .contactacc__form-area-item textarea {
     width: 100%;
-    padding: 10px;
+    padding: 5px;
     border-radius: 5px;
     border: 1px solid var(--primary-color-1);
     font-size: 14px;
+    appearance: none; /* Supprimer l'apparence native */
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }
+
 
 .contactacc__form-area-item select {
     appearance: none; /* Pour enlever le style par défaut des navigateurs */
@@ -8028,7 +8036,7 @@ Responsive Menu Css
 
 .contactacc__form-area-item.custom-select select {
   width: 100%;
-  padding: 10px 40px 10px 10px;
+  padding: 15px 40px 15px 10px;
   border-radius: 5px;
   border: 1px solid var(--primary-color-1);
   font-size: 14px;
@@ -8050,6 +8058,15 @@ Responsive Menu Css
 /* Ajouter un style de focus pour la sélection */
 .contactacc__form-area-item.custom-select select:focus {
   border-color: var(--primary-color-2); /* Changer la couleur de la bordure lorsque le champ est sélectionné */
+}
+
+.contactacc__two-right-form-item button{
+  width: 100%;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;  
 }
 
 

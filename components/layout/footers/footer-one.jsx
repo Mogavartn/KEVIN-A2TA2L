@@ -13,11 +13,11 @@ const FooterOne = () => {
                 <div className="row justify-content-center text-center subscribe__one-content" style={{backgroundImage: `url(${ctaBg.src})`}}>
                     <div className="col-xl-7 col-lg-8">
                         <div className="subscribe__one-title">
-                            <h3>Subscribe Our newsletter</h3>
+                            <h3>Abonnez-vous à notre newsletter</h3>
                         </div>
                         <form action="#" className="subscribe__one-form">
                             <input type="email" placeholder="Enter Your Email" />
-                            <button className="btn-two" type="submit">subscribe now</button>
+                            <button className="btn-two" type="submit">S'abonner</button>
                         </form>
                     </div>
                 </div>

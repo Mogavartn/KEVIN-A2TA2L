@@ -3,32 +3,24 @@ import Count from '../../common/count';
 import bgImage from "../../../../public/assets/img/contact/contact-bg.png";
 import image1 from "../../../../public/assets/img/contact/contact.png";
 import image2 from "../../../../public/assets/img/contact/contact-2.jpg";
+import FormAreaacc from '../../contacts/formacc';
 
 const ContactForm = () => {
     return (
         <>
             <div className="contact__one section-padding" style={{backgroundImage: `url(${bgImage.src})`}}>
                 <div className="container">
-                    <div className="row align-items-end gy-4 justify-content-between">
+                    <div className="row align-items-center gy-4 justify-content-between">
                         <div className="col-xl-6">
                             <div className="contact__one-title">
-                                <span className="subtitle-one">Sent Now</span>
-                                <h2>Igniting the IT Potential</h2>
+                                <span className="subtitle-one">Contactez-nous</span>
+                                <h2>Planifier un Entretien</h2>
                             </div>
-                            <form action="#" className="contact__one-form">
-                                <div className="contact__one-form-top">
-                                    <input type="text" placeholder="First Name..." />
-                                    <input type="text" placeholder="Your Phone..." />
-                                </div>
-                                <input type="email" placeholder="Your E-mail..." className="w-100" />
-                                <button type="submit" className="btn-two w-100">Sent Now
-                                    <i className="fas fa-chevron-right"></i>
-                                </button>
-                            </form>
+                            <FormAreaacc />
                         </div>
                         <div className="col-xl-5">
                             <div className="contact__one-right">
-                                <div className="row gy-4 align-items-end">
+                                <div className="row gy-4 align-items-center">
                                     <div className="col-xl-8 col-lg-4 col-md-6 col-sm-6">
                                         <img src={image1.src} alt="image" />
                                     </div>

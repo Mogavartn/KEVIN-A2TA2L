@@ -32,7 +32,7 @@ const HomeOne = () => {
             <Tab />
             <WorkArea />
             <Blog />
-            <ContactAc />
+            <ContactForm />
             <FooterOne />
             <ScrollToTop />
         </div>

@@ -13,7 +13,7 @@ const FormAreaacc = () => {
                     {/* Nom */}
                     <div className="col-md-6 mb-30">
                         <div className="contactacc__form-area-item">
-                            <input type="text" name="lastName" placeholder="NOM*" required="required" />
+                            <input type="text" name="lastName" placeholder="Nom*" required="required" />
                         </div>
                     </div>
 
@@ -94,7 +94,7 @@ const FormAreaacc = () => {
                     {/* Bouton Submit */}
                     <div className="col-md-12">
                         <div className="contactacc__two-right-form-item">
-                            <button className="btn-one" type="submit">Envoyez</button>
+                            <button className="btn-one btn-one" type="submit">Envoyez</button>
                         </div>
                     </div>
                 </div>
