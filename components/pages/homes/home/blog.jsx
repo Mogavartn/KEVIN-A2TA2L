@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 const Blog = () => {
     return (
-        <div className="blog__one section-padding pt-lg-0">
+        <div className="blog__one section-padding pt-lg-5">
             <div className="container">
                 <div className="row justify-content-center text-center">
                     <div className="col-xl-6 col-lg-6">

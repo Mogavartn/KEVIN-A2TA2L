@@ -18,9 +18,9 @@ const ContactUs = () => {
                         <div className="col-xl-6">
                             <div className="contact__two-content">
                                 <div className="contact__two-title">
-                                    <span className="subtitle-one">Contact us</span>
-                                    <h2>Do you have any question? </h2>
-                                    <p>For your car we will do everything  advice, repairs and maintenance. We are the some preferred choice by many car owners because</p>
+                                    <span className="subtitle-one">Contactez-nous</span>
+                                    <h2>Avez-vous des questions ? </h2>
+                                    <p>Pour votre formation, nous vous offrirons des conseils, des sessions pratiques et un suivi personnalisé. Nous sommes le choix préféré de nombreux apprenants</p>
                                 </div>
                                 <div className="contact__two-form">
                                     <FormArea />

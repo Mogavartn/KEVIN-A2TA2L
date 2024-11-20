@@ -30,10 +30,10 @@ const ContactForm = () => {
                                         </div>
                                         <div className="contact__one-counter">
                                             <div className="counter-only">
-                                                <h3 className="counter"><Count number={10}/></h3>
+                                                <h3 className="counter"><Count number={25}/></h3>
                                                 <h3>+</h3>
                                             </div>
-                                            <span>years of experiences</span>
+                                            <span>années d'expériences</span>
                                         </div>
                                     </div>
                                 </div>
