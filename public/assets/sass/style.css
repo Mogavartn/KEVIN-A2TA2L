@@ -6849,7 +6849,7 @@ Responsive Menu Css
     width: 100%;
     padding: 5px;
     border-radius: 5px;
-    border: 1px solid var(--primary-color-1);
+    border: 1px solid var(--border-color-2);
     font-size: 14px;
     appearance: none; /* Supprimer l'apparence native */
   -webkit-appearance: none;
@@ -6880,7 +6880,7 @@ Responsive Menu Css
   width: 100%;
   padding: 15px 40px 15px 10px;
   border-radius: 5px;
-  border: 1px solid var(--primary-color-1);
+  border: 1px solid var(--border-color-2);
   font-size: 14px;
   appearance: none; /* Supprimer l'apparence native */
   -webkit-appearance: none;
@@ -6899,12 +6899,12 @@ Responsive Menu Css
 
 /* Ajouter un style de focus pour la sélection */
 .contactacc__form-area-item.custom-select select:focus {
-  border-color: var(--primary-color-2); /* Changer la couleur de la bordure lorsque le champ est sélectionné */
+  border-color: var(--primary-color-1); /* Changer la couleur de la bordure lorsque le champ est sélectionné */
 }
 
 .contactacc__two-right-form-item button{
   width: 100%;
-  color: #ffffff;
+  color: #080808;
   display: flex;
   justify-content: center;
   align-items: center;

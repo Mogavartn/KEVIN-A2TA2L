@@ -9,9 +9,9 @@ import ScrollToTop from "../../common/scroll/scroll-to-top";
 const PortfolioTowColumns = () => {
     return (
         <>
-            <SEO pageTitle='Portfolio Grid - 02 Columns' />
+            <SEO pageTitle='Portfolio' />
             <HeaderOne />
-            <BreadCrumb title="02 Columns" innerTitle="Portfolio Grid" />
+            <BreadCrumb title="Portfolio" innerTitle="Portfolio" />
             <TwoColumns />        
             <FooterOne />    
             <ScrollToTop />      

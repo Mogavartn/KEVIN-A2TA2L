@@ -5,42 +5,42 @@ const FormAreaacc = () => {
                 <div className="row">
                     {/* Prénom */}
                     <div className="col-md-6 mb-30">
-                        <div className="contactacc__form-area-item">
+                        <div className="contact__form-area-item">
                             <input type="text" name="firstName" placeholder="Prénom*" required="required" />
                         </div>
                     </div>
 
                     {/* Nom */}
                     <div className="col-md-6 mb-30">
-                        <div className="contactacc__form-area-item">
+                        <div className="contact__form-area-item">
                             <input type="text" name="lastName" placeholder="Nom*" required="required" />
                         </div>
                     </div>
 
                     {/* Email */}
                     <div className="col-md-6 mb-30">
-                        <div className="contactacc__form-area-item">
+                        <div className="contact__form-area-item">
                             <input type="email" name="email" placeholder="Email*" required="required" />
                         </div>
                     </div>
 
                     {/* Téléphone */}
                     <div className="col-md-6 mb-30">
-                        <div className="contactacc__form-area-item">
+                        <div className="contact__form-area-item">
                             <input type="tel" name="phone" placeholder="Téléphone*" required="required" />
                         </div>
                     </div>
 
                     {/* Entreprise */}
                     <div className="col-md-6 mb-30">
-                        <div className="contactacc__form-area-item">
+                        <div className="contact__form-area-item">
                             <input type="text" name="company" placeholder="Entreprise*" required="required" />
                         </div>
                     </div>
 
                     {/* Fonction */}
                     <div className="col-md-6 mb-30">
-                        <div className="contactacc__form-area-item">
+                        <div className="contact__form-area-item">
                             <input type="text" name="role" placeholder="Fonction*" required="required" />
                         </div>
                     </div>
@@ -60,7 +60,7 @@ const FormAreaacc = () => {
 
                     {/* LinkedIn URL */}
                     <div className="col-md-6 mb-30">
-                        <div className="contactacc__form-area-item">
+                        <div className="contact__form-area-item">
                             <input type="url" name="linkedin" placeholder="URL de votre profil LinkedIn*" required="required" />
                         </div>
                     </div>
@@ -79,14 +79,14 @@ const FormAreaacc = () => {
 
                     {/* Sujet */}
                     <div className="col-md-6 mb-30">
-                        <div className="contactacc__form-area-item">
+                        <div className="contact__form-area-item">
                             <input type="text" name="subject" placeholder="Sujet" />
                         </div>
                     </div>
 
                     {/* Message */}
                     <div className="col-md-12 mb-30">
-                        <div className="contactacc__form-area-item">
+                        <div className="contact__form-area-item">
                             <textarea name="message" placeholder="Message"></textarea>
                         </div>
                     </div>

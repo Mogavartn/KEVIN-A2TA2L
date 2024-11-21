@@ -13,7 +13,7 @@ const Video = () => {
                     <i className="fas fa-play"></i>
                 </span>
             </div>
-            <ModalVideo className='video-modal' channel="youtube" autoplay isOpen={openVideo} videoId="SZEflIVnhH8" onClose={() => setOpenVideo(false)} />
+            <ModalVideo className='video-modal' channel="youtube" autoplay isOpen={openVideo} videoId="UnV3KK7hQeg" onClose={() => setOpenVideo(false)} />
         </>
     );
 };

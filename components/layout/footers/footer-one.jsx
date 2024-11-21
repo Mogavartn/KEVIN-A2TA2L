@@ -98,8 +98,9 @@ const FooterOne = () => {
 						</div>
 						<div className="col-xl-5 col-lg-6">
 							<div className="copyright__one-right">
-								<Link href="/about">Privacy Policy</Link>
-								<Link href="/contact">Contact Us</Link>
+								<Link href="/about">Mentions légales</Link>
+								<Link href="/contact">CGV</Link>
+								<Link href="/contact">Certificat Qualiopi</Link>
 							</div>
 						</div>
 					</div>

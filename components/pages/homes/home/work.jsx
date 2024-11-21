@@ -10,13 +10,13 @@ const WorkArea = () => {
                 <div className="row align-items-end work-process-area__one-title">
                     <div className="col-xl-7 col-lg-7">
                         <div className="work-process-area__one-content-left">
-                            <span className="subtitle-one">Work Process</span>
-                            <h2>Sustainable and Responsible Computing</h2>
+                            <span className="subtitle-one">Processus de travail</span>
+                            <h2>Nos qualités </h2>
                         </div>
                     </div>
                     <div className="col-xl-4 offset-xl-1 col-lg-4 offset-lg-1">
                         <div className="work-process-area__one-content-right">
-                            <p>Discuss strategies for reducing energy consumption in data centers, personal devices, and reduce power usage</p>
+                            <p>Nos cours sont élaborés par des experts passionnés, offrant une expertise pointue dans divers domaines.</p>
                         </div>
                     </div>
                 </div>
@@ -25,22 +25,22 @@ const WorkArea = () => {
                         <div className="work-process-area__one-single-work">
                             <span>01</span>
                             <div className="work-process-area__one-single-work-content">
-                                <h4>Assess Requirements Precisely</h4>
-                                <p>Begin by comprehensively understanding your business needs to ensure a perfect fit for tech solutions.</p>
+                                <h4>Expertise</h4>
+                                <p>Tous nos cours sont conçus par des experts dans leur domaine.</p>
                             </div>
                         </div>
                         <div className="work-process-area__one-single-work">
                             <span>02</span>
                             <div className="work-process-area__one-single-work-content">
-                                <h4>Develop Custom Solutions</h4>
-                                <p>Engage in crafting tailor-made software designed meticulously to align with your specific targets.</p>
+                                <h4>Flexibilité</h4>
+                                <p>Choisissez parmi une variété de cours couvrant divers sujets.</p>
                             </div>
                         </div>
                         <div className="work-process-area__one-single-work">
                             <span>03</span>
                             <div className="work-process-area__one-single-work-content">
-                                <h4>Implement and Support</h4>
-                                <p>Seamlessly integrate the new systems into framework with ongoing support for continual optimization.</p>
+                                <h4>Expérience</h4>
+                                <p>Nous avons dispensé plus de 2 100 formations l'année dernière.</p>
                             </div>
                         </div>
                     </div>
@@ -51,10 +51,10 @@ const WorkArea = () => {
                         <div className="work-process-area__one-right-counter-img">
                             <div className="img-counter">
                                 <div className="counter-only">
-                                    <h2 className="counter"><Count number={20}/></h2>
+                                    <h2 className="counter"><Count number={25}/></h2>
                                     <h2>+</h2>
                                 </div>
-                                <span>years of experiences</span>
+                                <span>années d'expériences</span>
                             </div>
                             <img src={image2.src} alt="image" />
                         </div>

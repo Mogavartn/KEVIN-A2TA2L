@@ -10,9 +10,9 @@ import ScrollToTop from "../../common/scroll/scroll-to-top";
 const BlogGrid = () => {
     return (
         <>
-            <SEO pageTitle='Blog Grid' />
+            <SEO pageTitle='Blog' />
             <HeaderOne />
-            <BreadCrumb title="Blog Grid" innerTitle="Blog Grid" />
+            <BreadCrumb title="Blog" innerTitle="Blog" />
             <BlogGridMain />
             <FooterOne />
             <ScrollToTop />

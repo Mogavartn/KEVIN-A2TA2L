@@ -37,7 +37,7 @@ const TwoColumns = () => {
                 {next < items.length && (
                     <div className="row mt-70">
                         <div className="col-xl-12 t-center">
-                            <button onClick={handleLoadData} className="btn-one">Load More</button>
+                            <button onClick={handleLoadData} className="btn-one">Charger plus</button>
                         </div>
                     </div>
                 )}

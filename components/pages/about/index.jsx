@@ -9,9 +9,9 @@ import ScrollToTop from "../common/scroll/scroll-to-top";
 const AboutUs = () => {
     return (
       <>
-        <SEO pageTitle="About Us" />
+        <SEO pageTitle="À propos de nous" />
         <HeaderOne />
-        <BreadCrumb title="About Us" innerTitle="Company About" />
+        <BreadCrumb title="À propos de nous" innerTitle="À propos de Ikigai" />
         <AboutMain />
         <FooterOne />        
         <ScrollToTop />
