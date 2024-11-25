@@ -9,14 +9,9 @@ const MainMenu = () => {
                 </li>
                 <li className="menu-item-has-children"><Link href="/about">À propos</Link>
                 </li>
-                <li className="menu-item-has-children"><Link href="/services">Services <i className="fas fa-angle-down"></i></Link>
-                    <ul className="sub-menu">
-                        <li><Link href="/services">Services 01</Link></li>
-                        <li><Link href="/services-two">Services 02</Link></li>
-                        <li><Link href="/services/data-analytics">Services Details</Link></li>
-                    </ul>
+                <li className="menu-item-has-children"><Link href="/services">Formations </Link>
                 </li>
-                <li className="menu-item-has-children"><Link href="/portfolio/2-columns">Portfolio </Link>
+                <li className="menu-item-has-children"><Link href="/portfolio/2-columns"> </Link>
                 </li>
                 <li className="menu-item-has-children"><Link href="/blog">Blog</Link>   
                 </li>
