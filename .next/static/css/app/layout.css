@@ -16,7 +16,7 @@
   \****************************************************************************************************************************************************************************************************************************************************************************************/
 @font-face {
   font-family: "flaticon_bantec";
-  src: url(/_next/static/media/flaticon_bantec.00977abf.woff2) format("woff2"), url(/_next/static/media/flaticon_bantec.5bf6bfc4.woff) format("woff"), url(/_next/static/media/flaticon_bantec.472cbd44.eot#iefix) format("embedded-opentype"), url(/_next/static/media/flaticon_bantec.d3412001.ttf) format("truetype"), url(/_next/static/media/flaticon_bantec.ad38ea08.svg#flaticon_bantec) format("svg");
+  src: url(/_next/static/media/flaticon_bantec.00977abf.woff2) format("woff2"), url(/_next/static/media/flaticon_bantec.5bf6bfc4.woff) format("woff"), url(/_next/static/media/flaticon_bantec.472cbd44.eot#iefix) format("embedded-opentype"), url(/_next/static/media/flaticon_bantec.d3412001.ttf) format("truetype"), url(/_next/static/media/flaticon_bantec.df9fdb2b.svg#flaticon_bantec) format("svg");
 }
 i[class^=flaticon-]:before, i[class*=" flaticon-"]:before {
   font-family: flaticon_bantec !important;
@@ -7959,7 +7959,7 @@ Responsive Menu Css
 /* Media Queries for responsive design */
 @media (max-width: 1399px) {
   .contact__acc-single-info {
-    width: 46%; /* Ajuster la largeur pour plus d'espace sur des Ã©crans plus petits */
+    width: 46%; /* Ajuster la largeur pour plus d'espace sur des écrans plus petits */
   }
 }
 
@@ -8016,20 +8016,20 @@ Responsive Menu Css
 
 
 .contactacc__form-area-item select {
-    appearance: none; /* Pour enlever le style par dÃ©faut des navigateurs */
+    appearance: none; /* Pour enlever le style par défaut des navigateurs */
     -webkit-appearance: none;
     -moz-appearance: none;
 }
 
 .contactacc__form-area-item input[type="tel"] {
-    -webkit-appearance: input; /* S'assurer que le clavier pour le tÃ©lÃ©phone soit adaptÃ© sur mobile */
+    -webkit-appearance: input; /* S'assurer que le clavier pour le téléphone soit adapté sur mobile */
 }
 
 .contactacc__form-area-item textarea {
     resize: vertical;
     height: 150px;
 }
-/* Ajouter du style Ã  la liste dÃ©roulante avec l'icÃ´ne */
+/* Ajouter du style à la liste déroulante avec l'icône */
 .contactacc__form-area-item.custom-select {
   position: relative;
 }
@@ -8052,12 +8052,12 @@ Responsive Menu Css
   transform: translateY(-50%);
   font-size: 16px;
   color: var(--primary-color-1);
-  pointer-events: none; /* L'icÃ´ne ne doit pas interfÃ©rer avec l'interaction */
+  pointer-events: none; /* L'icône ne doit pas interférer avec l'interaction */
 }
 
-/* Ajouter un style de focus pour la sÃ©lection */
+/* Ajouter un style de focus pour la sélection */
 .contactacc__form-area-item.custom-select select:focus {
-  border-color: var(--primary-color-1); /* Changer la couleur de la bordure lorsque le champ est sÃ©lectionnÃ© */
+  border-color: var(--primary-color-1); /* Changer la couleur de la bordure lorsque le champ est sélectionné */
 }
 
 .contactacc__two-right-form-item button{

@@ -1,4 +1,4 @@
-// File: C:\Users\virgu\Desktop\Kevin\KEVIN-A2TA2L\app\layout.jsx
+// File: /Users/mo/Documents/PROJECTS-JAK-WEBSITES/SITE KEVIN/main-file/app/layout.jsx
 import * as entry from '../../../app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

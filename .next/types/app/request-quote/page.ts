@@ -1,4 +1,4 @@
-// File: C:\Users\virgu\Desktop\Kevin\KEVIN-A2TA2L\app\request-quote\page.jsx
+// File: /Users/mo/Documents/PROJECTS-JAK-WEBSITES/SITE KEVIN/main-file/app/request-quote/page.jsx
 import * as entry from '../../../../app/request-quote/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
