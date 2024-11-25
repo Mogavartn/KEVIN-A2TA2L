@@ -16,6 +16,7 @@ import ContactAc from "../../contacts/contactaccueil";
 import Video from "./video";
 import ContactForm from "./contact-form";
 import Tab from "./tab/tab";
+import FooterThree from "@/components/layout/footers/footer-three";
 
 const HomeOne = () => {
     return (
@@ -33,7 +34,7 @@ const HomeOne = () => {
             <WorkArea />
             <Blog />
             <ContactForm />
-            <FooterOne />
+            <FooterThree />
             <ScrollToTop />
         </div>
     );
