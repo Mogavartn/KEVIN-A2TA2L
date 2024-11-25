@@ -3,8 +3,8 @@ import SEO from "@/components/data/seo";
 import HeaderOne from "@/components/layout/headers/header/header-one";
 import BreadCrumb from "../common/breadcrumb";
 import AboutMain from "./about";
-import FooterOne from "@/components/layout/footers/footer-one";
 import ScrollToTop from "../common/scroll/scroll-to-top";
+import FooterThree from "@/components/layout/footers/footer-three";
 
 const AboutUs = () => {
     return (
@@ -13,7 +13,7 @@ const AboutUs = () => {
         <HeaderOne />
         <BreadCrumb title="À propos de nous" innerTitle="À propos de Ikigai" />
         <AboutMain />
-        <FooterOne />        
+        <FooterThree />        
         <ScrollToTop />
       </>
     );

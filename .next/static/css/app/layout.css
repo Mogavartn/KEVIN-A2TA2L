@@ -11955,6 +11955,43 @@ Responsive Menu Css
   }
 }
 /*==========================================================================
+* Formation CSS - Archange
+============================================================================*/
+.formation-solution{
+  margin-left: 0px;
+}
+.formation-solution ul {
+  padding: 0;
+  margin: 0;
+}
+.formation-solution ul li {
+  padding: 0;
+  list-style: none;
+  margin-bottom: 21px;
+}
+.formation-solution ul li:last-child {
+  margin: 0;
+}
+.formation-solution ul li a {
+  color: var(--black);
+  transition: 0.4s;
+  position: relative;
+  font-size: 15px;
+}
+.formation-solution ul li a i {
+  color: var(--primary-color-1);
+  font-size: 14px;
+  margin-right: 10px;
+}
+.formation-solution ul li a:hover {
+  color: var(--primary-color-1);
+  padding-left: 10px;
+}
+.formation-solution h6 {
+  color: var(--text-white);
+  margin: 18px 0;
+}
+/*==========================================================================
 * Footer Four CSS
 ==========================================================================*/
 .footer__four {
