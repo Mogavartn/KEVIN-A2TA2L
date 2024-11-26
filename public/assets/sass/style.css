@@ -1036,14 +1036,43 @@ p {
   direction: ltr;
 }
 .text__slider .scroll {
-  animation: scroll 20s linear infinite;
   display: flex;
   gap: 80px;
+  animation: scrollLinear 20s linear infinite; /* Animation continue, défilement linéaire */
+  animation-play-state: running; /* L'animation est activée par défaut */
+}
+/* Pour empêcher les éléments de se redimensionner */
+.text__slider .scroll .brand__area-item {
+  flex: 0 0 auto;
+}
+/* Animation linéaire qui déplace les éléments horizontalement */
+@keyframes scrollLinear {
+  0% {
+    transform: translateX(0); /* Début de l'animation : position d'origine */
+  }
+  100% {
+    transform: translateX(-100%); /* Fin de l'animation : déplacer complètement hors de la vue */
+  }
 }
 .text__slider .text-slide {
   --gap: 0.1px;
   display: flex;
   gap: 80px;
+}
+
+/* Lorsqu'on survole tout le conteneur .scroll, l'animation se met en pause */
+.text__slider .scroll:hover {
+  animation-play-state: paused;
+}
+
+/* Lorsqu'on survole un des éléments .brand__area-item, l'animation se met également en pause */
+.text__slider .scroll .brand__area-item:hover {
+  animation-play-state: paused;
+}
+
+/* Nous utilisons aussi un événement pour garantir que tout l'ensemble de l'animation s'arrête même lors du survol des éléments */
+.text__slider .scroll:hover .brand__area-item {
+  animation-play-state: paused;
 }
 
 .swiper-button-prev::after {
@@ -5905,7 +5934,7 @@ Responsive Menu Css
 * Portfolio One Style
 ==========================================================================*/
 .portfolio__one {
-  background: var(--color-1);
+  background: var(--color-6);
 }
 .portfolio__one .custom__container {
   max-width: 1745px;
@@ -7113,14 +7142,18 @@ Responsive Menu Css
 * Why Choose Us three Style 
 ==========================================================================*/
 .why-choose-us__three {
-  background-color: var(--color-1);
+  background-color: var(--color-7);
+}
+.why-choose-us__three .subtitle-one{
+  color: var(--color-1);
 }
 .why-choose-us__three-title h2 {
+  color: var(--color-1);
   text-transform: none;
   margin-bottom: 30px;
 }
 .why-choose-us__three-title p {
-  color: var(--color-2);
+  color: var(--color-1);
   margin-bottom: 35px;
   text-transform: none;
   font-size: 17px;
@@ -9496,7 +9529,7 @@ Responsive Menu Css
   background-color: var(--primary-color-1);
   top: 0;
   left: 0;
-  opacity: 0.9;
+  opacity: 0.2;
 }
 .testimonial__one-left-title {
   z-index: 4;
