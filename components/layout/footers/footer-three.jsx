@@ -9,7 +9,7 @@ const FooterThree = () => {
         <div className="footer__three">
             <div className="container pt-80 pb-80">
                 <div className="footer__three-top">
-                    <h3>Join Our Social Community!</h3>
+                    <h3>Rejoignez notre communauté sociale !</h3>
                     <div className="footer__three-top-social">
                         <Social />
                     </div>
@@ -29,11 +29,11 @@ const FooterThree = () => {
                     </div>
                     <div className="col-xl-3 col-md-6 col-sm-5 sm-mb-30">
                         <div className="footer__three-widget border-one">
-                            <h4 className="ml-60">Our Services</h4>
+                            <h4 className="ml-60">Nos Formations</h4>
                             <div className="footer__three-widget-solution">
                                 <ul>
 									{servicesData.slice(0, 4).map((data, id) => {
-										const words = data.title.split(' ');
+										const words = data.titre.split(' ');
 										const firstAndSecondWord = words.slice(0, 2).join(' ');
 										return (
 											<li key={id}><Link href={`/services/${data.id}`}><i className="far fa-chevron-double-right"></i>{firstAndSecondWord}</Link></li>

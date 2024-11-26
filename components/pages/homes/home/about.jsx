@@ -7,8 +7,45 @@ import about1 from "../../../../public/assets/img/about/about-1.png";
 import about2 from "../../../../public/assets/img/about/about-2.png";
 import Link from "next/link";
 import Count from "../../common/count";
+import { useEffect } from 'react';
 
 const About = () => {
+    useEffect(() => {
+        // Sélectionner tous les conteneurs de défilement (les deux listes)
+        const scrollContainers = document.querySelectorAll('.scroll');
+        
+        // Sélectionner tous les éléments dans les listes (de la première et de la seconde liste)
+        const items = document.querySelectorAll('.brand__area-item');
+        
+        // Fonction pour mettre en pause l'animation
+        const handleMouseEnter = () => {
+          scrollContainers.forEach(container => {
+            container.style.animationPlayState = 'paused'; // Met en pause l'animation sur tous les conteneurs
+          });
+        };
+    
+        // Fonction pour reprendre l'animation
+        const handleMouseLeave = () => {
+          scrollContainers.forEach(container => {
+            container.style.animationPlayState = 'running'; // Reprend l'animation sur tous les conteneurs
+          });
+        };
+    
+        // Ajouter les événements de survol à tous les éléments
+        items.forEach(item => {
+          item.addEventListener('mouseenter', handleMouseEnter);
+          item.addEventListener('mouseleave', handleMouseLeave);
+        });
+    
+        return () => {
+          // Nettoyage des événements
+          items.forEach(item => {
+            item.removeEventListener('mouseenter', handleMouseEnter);
+            item.removeEventListener('mouseleave', handleMouseLeave);
+          });
+        };
+      }, []);
+
     return (
         <>
         <div className="brand__area pt-115">
@@ -19,36 +56,56 @@ const About = () => {
                             <div className="text-slide">
                                 <div className="sliders scroll">
                                     <div className="brand__area-item">
-                                        <img src={brand1.src} alt="image" />
+                                        <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
+                                            <img src={brand1.src} alt="image" />
+                                        </a>
                                     </div>
                                     <div className="brand__area-item">
-                                        <img src={brand2.src} alt="image" />
+                                        <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
+                                            <img src={brand2.src} alt="image" />
+                                        </a>
                                     </div>
                                     <div className="brand__area-item">
-                                        <img src={brand3.src} alt="image" />
+                                        <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
+                                            <img src={brand3.src} alt="image" />
+                                        </a>
                                     </div>
                                     <div className="brand__area-item">
-                                        <img src={brand4.src} alt="image" />
+                                        <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
+                                            <img src={brand4.src} alt="image" />
+                                        </a>
                                     </div>
                                     <div className="brand__area-item">
-                                        <img src={brand5.src} alt="image" />
+                                        <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
+                                            <img src={brand5.src} alt="image" />
+                                        </a>
                                     </div>
                                 </div>
                                 <div className="sliders scroll">
                                     <div className="brand__area-item">
-                                        <img src={brand1.src} alt="image" />
+                                        <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
+                                            <img src={brand1.src} alt="image" />
+                                        </a>
                                     </div>
                                     <div className="brand__area-item">
-                                        <img src={brand2.src} alt="image" />
+                                        <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
+                                            <img src={brand2.src} alt="image" />
+                                        </a>
                                     </div>
                                     <div className="brand__area-item">
-                                        <img src={brand3.src} alt="image" />
+                                        <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
+                                            <img src={brand3.src} alt="image" />
+                                        </a>
                                     </div>
                                     <div className="brand__area-item">
-                                        <img src={brand4.src} alt="image" />
+                                        <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
+                                            <img src={brand4.src} alt="image" />
+                                        </a>
                                     </div>
                                     <div className="brand__area-item">
-                                        <img src={brand5.src} alt="image" />
+                                        <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
+                                            <img src={brand5.src} alt="image" />
+                                        </a>
                                     </div>
                                 </div>
                             </div>

@@ -23,7 +23,7 @@ const ChooseFour = () => {
                                     </div>
                                     <div className="why-choose-us__three-bottom-card-counter">
                                     <h4>+</h4>
-                                        <h4 className="counter"><Count number={500}/></h4>
+                                        <h4 className="counter"><Count number={2100}/></h4>
                                     </div>
                                 </div>
                                 <div className="why-choose-us__three-bottom-card">
