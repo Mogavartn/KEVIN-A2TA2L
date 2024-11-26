@@ -27,6 +27,9 @@ const BannerOne = () => {
                                     </Link>
                                     <Link href="/services" className="btn-two1">Je veux me former
                                     </Link>
+                                    <span className="video-acceuil" >
+                                        <i className="fas fa-play"></i>
+                                    </span>
                                 </div>
                             </div>
                         </div>

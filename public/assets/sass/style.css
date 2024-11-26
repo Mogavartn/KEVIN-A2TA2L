@@ -5210,7 +5210,7 @@ Responsive Menu Css
   transform: rotate(-10deg);
   animation: halfRotationAnimation 5s infinite ease-in-out;
 }
-.skill-area__one-left-video-play-btn {
+.skill-area__one-left-video-play-btn, .video-acceuil {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -5227,6 +5227,29 @@ Responsive Menu Css
   color: var(--bg-white);
   transition: 0.4s;
   cursor: pointer;
+}
+.video-acceuil {
+  position: absolute;
+  top: 94%;
+  left: 92%;
+  transform: translate(-50%, -50%);
+  width: 65px;
+  height: 65px;
+  text-align: center;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--primary-color-1);
+  border-radius: 50%;
+  font-size: 21px;
+  color: var(--bg-white);
+  transition: 0.4s;
+  cursor: pointer;
+}
+.video-acceuil:hover{
+  color: var(--primary-color-1);
+  background: var(--bg-white);
+  border: 1px solid var(--primary-color-1);
 }
 .skill-area__one-left-video-play-btn:hover {
   color: var(--primary-color-1);
@@ -5421,6 +5444,10 @@ Responsive Menu Css
 /*==========================================================================
 * Services One Style
 ==========================================================================*/
+.services__one{
+  background: var(--color-6);
+  background-image: url();
+}
 .services__one-title h2 {
   margin: auto;
   margin-bottom: 30px;
