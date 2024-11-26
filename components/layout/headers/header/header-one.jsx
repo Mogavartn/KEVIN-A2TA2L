@@ -28,15 +28,10 @@ const HeaderOne = ({variant}) => {
             <div className="container">
                 <div className="row">
                     <div className="col-xl-7 col-md-7">
-                        <div className="top__bar-left">
-                            <Link href="tel:(629)555-0129"><i className="fas fa-phone-alt"></i>(629) 555-0129</Link>
-                            <Link href="mailto:info@example.com"><i className="fas fa-envelope"></i>info@example.com</Link>
-                        </div>
+                       
                     </div>
                     <div className="col-xl-5 col-md-5">
-                        <div className="top__bar-right">
-                            <Link href="https://www.google.com/maps"><i className="fas fa-map-marker-alt"></i>6391 Elgin St. Celina, 10299</Link>
-                        </div>
+
                     </div>
                 </div>
             </div>
@@ -71,7 +66,7 @@ const HeaderOne = ({variant}) => {
                                 </div>
                             </div>
                             <div className="header__area-menubar-right-box-btn">
-                                <Link className="btn-one" href="/request-quote">Get Quote<i className="fas fa-arrow-right"></i></Link>
+                                <Link className="btn-one" href="/request-quote">demandez de devis<i className="fas fa-arrow-right"></i></Link>
                             </div>
                         <div className="header__area-menubar-right-responsive-menu menu__bar">
                             <i className="flaticon-menu-1" onClick={() => setMenuSidebar(true)}></i>

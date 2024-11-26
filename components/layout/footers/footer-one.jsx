@@ -13,11 +13,11 @@ const FooterOne = () => {
                 <div className="row justify-content-center text-center subscribe__one-content" style={{backgroundImage: `url(${ctaBg.src})`}}>
                     <div className="col-xl-7 col-lg-8">
                         <div className="subscribe__one-title">
-                            <h3>Subscribe Our newsletter</h3>
+                            <h3>Abonnez-vous à notre newsletter</h3>
                         </div>
                         <form action="#" className="subscribe__one-form">
                             <input type="email" placeholder="Enter Your Email" />
-                            <button className="btn-two" type="submit">subscribe now</button>
+                            <button className="btn-two" type="submit">S'abonner</button>
                         </form>
                     </div>
                 </div>
@@ -39,7 +39,7 @@ const FooterOne = () => {
 										</div>
 										<div className="footer__two-widget-about-location-item-info">
 											<span>Phone Number</span>
-											<Link href="tel:(307)555-0133">(307) 555-0133</Link>
+											<Link href="tel:(307)555-0133">(+212) 659 87 14 68</Link>
 										</div>
 									</div>
 								</div>
@@ -61,11 +61,11 @@ const FooterOne = () => {
 					</div>
 					<div className="col-xl-3 col-lg-4 col-md-6 col-sm-6">
 						<div className="footer__two-widget">
-							<h4>Our Services</h4>
+							<h4>Nos Formations</h4>
 							<div className="footer__two-widget-solution">
 								<ul>
 									{servicesData.slice(0, 4).map((data, id) => {
-										const words = data.title.split(' ');
+										const words = data.titre.split(' ');
 										const firstAndSecondWord = words.slice(0, 2).join(' ');
 										return (
 											<li key={id}><Link href={`/services/${data.id}`}><i className="far fa-chevron-double-right"></i>{firstAndSecondWord}</Link></li>
@@ -98,8 +98,9 @@ const FooterOne = () => {
 						</div>
 						<div className="col-xl-5 col-lg-6">
 							<div className="copyright__one-right">
-								<Link href="/about">Privacy Policy</Link>
-								<Link href="/contact">Contact Us</Link>
+								<Link href="/about">Mentions légales</Link>
+								<Link href="/contact">CGV</Link>
+								<Link href="/contact">Certificat Qualiopi</Link>
 							</div>
 						</div>
 					</div>

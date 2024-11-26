@@ -9,9 +9,9 @@ import ScrollToTop from '../common/scroll/scroll-to-top';
 const RequestQuotePage = () => {
     return (
         <>
-            <SEO pageTitle="Request Quote" />
+            <SEO pageTitle="Demander un devis" />
             <HeaderOne />
-            <BreadCrumb title="Request Quote" innerTitle="Request Quote" />
+            <BreadCrumb title="Demander un devis" innerTitle="Demander un devis" />
             <RequestQuoteMain />
             <FooterOne />
             <ScrollToTop />

@@ -2,28 +2,29 @@
 import SEO from "@/components/data/seo";
 import HeaderOne from "@/components/layout/headers/header/header-one";
 import BreadCrumb from "../common/breadcrumb";
-import FooterOne from "@/components/layout/footers/footer-one";
 import ScrollToTop from "../common/scroll/scroll-to-top";
 import FormArea from "./form";
+import FormAreaacc from "./formacc";
+import FooterThree from "@/components/layout/footers/footer-three";
 
 const ContactUs = () => {
     return (
         <>
-            <SEO pageTitle="Contact Us" />        
+            <SEO pageTitle="Contactez-nous" />        
             <HeaderOne />
-            <BreadCrumb title="Contact Us" innerTitle="Contact Us" />
+            <BreadCrumb title="Contactez-nous" innerTitle="Contactez-nous" />
             <div className="contact__two section-padding">
                 <div className="container">
                     <div className="row gy-4 align-items-center">
                         <div className="col-xl-6">
                             <div className="contact__two-content">
                                 <div className="contact__two-title">
-                                    <span className="subtitle-one">Contact us</span>
-                                    <h2>Do you have any question? </h2>
-                                    <p>For your car we will do everything  advice, repairs and maintenance. We are the some preferred choice by many car owners because</p>
+                                    <span className="subtitle-one">Contactez-nous</span>
+                                    <h2>Prendre RDV </h2>
+                                    <p>Nous vous offrirons des conseils, des sessions pratiques et un suivi personnalisé.</p>
                                 </div>
                                 <div className="contact__two-form">
-                                    <FormArea />
+                                    <FormAreaacc />
                                 </div>
                             </div>
                         </div>
@@ -73,7 +74,7 @@ const ContactUs = () => {
                     </div>
                 </div>
             </div>
-            <FooterOne />
+            <FooterThree />
             <ScrollToTop />
         </>
     );

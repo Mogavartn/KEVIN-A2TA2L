@@ -7,8 +7,8 @@ const Features = () => {
             <div className="container">
                 <div className="row justify-content-center text-center">
                     <div className="col-xl-7 col-lg-7 col-md-9 services__one-title">
-                        <span className="subtitle-one">Core Features</span>
-                        <h2>Innovative IT Strategies and Solutions</h2>
+                        <span className="subtitle-one">Services & Formations</span>
+                        <h2>Offrir des Solutions Concrètes</h2>
                     </div>
                 </div>
                 <div className="row align-items-center justify-content-center">
@@ -20,8 +20,8 @@ const Features = () => {
                                         <i className="flaticon-global-network"></i>
                                     </div>
                                     <div className="services__one-single-service-content">
-                                        <h4>Cloud Solutions Management</h4>
-                                        <p>IT infrastructure including network installation</p>
+                                        <h4>Accompagnement à la Création d'Activité</h4>
+                                        <p>Un coaching personnalisé et des formations pour vous aider à lancer votre entreprise avec succès.</p>
                                     </div>
                                 </div>
                             </div>
@@ -31,8 +31,8 @@ const Features = () => {
                                         <i className="flaticon-mobile-phone-1"></i>
                                     </div>
                                     <div className="services__one-single-service-content">
-                                        <h4>Analytics Business Intelligence</h4>
-                                        <p>Comprehensive analytics services providing</p>
+                                        <h4>Réorientation Professionnelle</h4>
+                                        <p>Nous vous aidons à acquérir les compétences pour réussir dans une nouvelle direction professionnelle.</p>
                                     </div>
                                 </div>
                             </div>
@@ -51,8 +51,8 @@ const Features = () => {
                                         <i className="flaticon-idea"></i>
                                     </div>
                                     <div className="services__one-single-service-content">
-                                        <h4>Custom Software Development</h4>
-                                        <p>Our services build reliable, scalable, and innovative</p>
+                                        <h4>Formation Continue et Développement de Compétences</h4>
+                                        <p>Des formations pratiques pour développer les compétences nécessaires à votre réussite professionnelle.</p>
                                     </div>
                                 </div>
                             </div>
@@ -62,8 +62,8 @@ const Features = () => {
                                         <i className="flaticon-it"></i>
                                     </div>
                                     <div className="services__one-single-service-content">
-                                        <h4>Machine Learning Implementation</h4>
-                                        <p>Harnessing the power of artificial intelligence</p>
+                                        <h4>Solutions de Financement et Prises en Charge</h4>
+                                        <p>Nous vous guidons vers des financements et prises en charge pour rendre nos services accessibles.</p>
                                     </div>
                                 </div>
                             </div>

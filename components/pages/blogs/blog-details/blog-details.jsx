@@ -18,22 +18,22 @@ const BlogSingleMain = ({singleData}) => {
                 <div className="row gy-4 flex-wrap-reverse">
                     <div className="col-xl-8">
                         <div className="blog__details-thumb">
-                            <span className="date">{singleData.date} September 2024</span>
+                            <span className="date">{singleData.date} septembre 2024</span>
                                 <img className="img__full" src={singleData.image.src} alt="blog-details-image" />
                             </div>
                         <div className="blog__details-content">
                             <div className="blog__details-content-top">
                                 <span>
                                     <i className="far fa-user"></i>
-                                    by Admin
+                                    Administrateur
                                 </span>
                                 <span>
                                     <i className="far fa-folder-open"></i>
-                                    Category
+                                    Catégorie
                                 </span>
                                 <span>
                                     <i className="far fa-comments"></i>
-                                    Comments (05)
+                                    Commentaires (05)
                                 </span>
                             </div>
                             <h2>Transforming businesses through technology</h2>
@@ -45,7 +45,7 @@ const BlogSingleMain = ({singleData}) => {
                                         <div className="blog__details-quote-avatar-wrapper">
                                             <img src={avatar1.src} alt="image" />
                                         </div>
-                                        <h4>Mark wood</h4>
+                                        <h4>Marquer le bois</h4>
                                     </div>
                                     <div className="blog__details-quote-icon">
                                         <img src={icon.src} alt="image" />
@@ -103,7 +103,7 @@ const BlogSingleMain = ({singleData}) => {
                             </div>
                         </div>
                         <div className="blog__details-comments">
-                            <h3>3 Comment</h3>
+                            <h3>3 commentaires</h3>
                             <div className="blog__details-single-comment">
                                 <div className="blog__details-single-comment-user-pic">
                                     <img src={avatar2.src} alt="image" />
@@ -111,7 +111,7 @@ const BlogSingleMain = ({singleData}) => {
                                 <div className="blog__details-single-comment-body">
                                     <div className="blog__details-single-comment-body-top">
                                         <h5>Stanio lainto</h5>
-                                        <span>February 16, 2024</span>
+                                        <span>16 février 2024</span>
                                         <Social />
                                     </div>
                                     <p>Ished fact that a reader will be distrol acted bioii the.ished fact that a reader will be distrol acted laoreet Aliquam fact that a reader will be distrol </p>
@@ -125,7 +125,7 @@ const BlogSingleMain = ({singleData}) => {
                                 <div className="blog__details-single-comment-body">
                                     <div className="blog__details-single-comment-body-top">
                                         <h5>Court Henry</h5>
-                                        <span>February 16, 2024</span>
+                                        <span>16 février 2024</span>
                                         <Social />
                                     </div>
                                     <p>Ished fact that a reader will be distrol acted bioii the.ished fact that a reader will be distrol acted laoreet Aliquam fact that a reader will be distrol </p>

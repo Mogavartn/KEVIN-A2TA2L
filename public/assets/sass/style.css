@@ -444,6 +444,7 @@ p {
 
 .btn-one,
 .btn-two,
+.btn-two1,
 .btn-three,
 .btn-four,
 .btn-five,
@@ -471,6 +472,7 @@ p {
 }
 .btn-one i,
 .btn-two i,
+.btn-two1 i,
 .btn-three i,
 .btn-four i,
 .btn-five i,
@@ -486,6 +488,7 @@ p {
 }
 .btn-one:hover,
 .btn-two:hover,
+.btn-two1:hover,
 .btn-three:hover,
 .btn-four:hover,
 .btn-five:hover,
@@ -498,6 +501,7 @@ p {
 }
 .btn-one:hover i,
 .btn-two:hover i,
+.btn-two1:hover i,
 .btn-three:hover i,
 .btn-four:hover i,
 .btn-five:hover i,
@@ -513,6 +517,7 @@ p {
   background: var(--primary-color-1);
   color: var(--text-white);
   text-transform: none;
+  margin-right: 10px;
 }
 .btn-two:hover {
   background-color: transparent;
@@ -1031,14 +1036,43 @@ p {
   direction: ltr;
 }
 .text__slider .scroll {
-  animation: scroll 20s linear infinite;
   display: flex;
   gap: 80px;
+  animation: scrollLinear 20s linear infinite; /* Animation continue, défilement linéaire */
+  animation-play-state: running; /* L'animation est activée par défaut */
+}
+/* Pour empêcher les éléments de se redimensionner */
+.text__slider .scroll .brand__area-item {
+  flex: 0 0 auto;
+}
+/* Animation linéaire qui déplace les éléments horizontalement */
+@keyframes scrollLinear {
+  0% {
+    transform: translateX(0); /* Début de l'animation : position d'origine */
+  }
+  100% {
+    transform: translateX(-100%); /* Fin de l'animation : déplacer complètement hors de la vue */
+  }
 }
 .text__slider .text-slide {
   --gap: 0.1px;
   display: flex;
   gap: 80px;
+}
+
+/* Lorsqu'on survole tout le conteneur .scroll, l'animation se met en pause */
+.text__slider .scroll:hover {
+  animation-play-state: paused;
+}
+
+/* Lorsqu'on survole un des éléments .brand__area-item, l'animation se met également en pause */
+.text__slider .scroll .brand__area-item:hover {
+  animation-play-state: paused;
+}
+
+/* Nous utilisons aussi un événement pour garantir que tout l'ensemble de l'animation s'arrête même lors du survol des éléments */
+.text__slider .scroll:hover .brand__area-item {
+  animation-play-state: paused;
 }
 
 .swiper-button-prev::after {
@@ -1060,22 +1094,22 @@ p {
   --btn-white: #FFFFFF;
   --border-white: #FFFFFF;
   --black: #000000;
-  --primary-color-1: #0E59F2;
+  --primary-color-1: #7222db;
   --primary-color-2: #F8E559;
-  --primary-color-3: #406AFF;
-  --bg-heading-color: #051634;
-  --text-heading-color: #051634;
+  --primary-color-3: #b124fb;
+  --bg-heading-color: #130526;
+  --text-heading-color: #1f0a3b;
   --btn-heading-color: #131313;
   --body-color: #343434;
   --dark-one: #1C1E22;
   --dark-two: #222429;
   --color-1: #F4F7FB;
   --color-2: #737373;
-  --color-3: #0B46BF;
+  --color-3: #7516f2;
   --color-4: #CCCCCC;
-  --color-5: #12223e;
+  --color-5: #42246a;
   --color-6: #864af942;
-  --color-7: #07204D;
+  --color-7: #421281;
   --border-color-1: #E7E7E7;
   --border-color-2: #E9E9E8;
   --border-color-3: rgba(19, 19, 19, 0.1);
@@ -4018,7 +4052,7 @@ Responsive Menu Css
 .banner__one .banner-shape-7 {
   width: 60px;
   height: 280px;
-  background-color: #4b83f4;
+  background-color: #7222db;
   top: 8%;
   right: -1%;
   transform: skew(19deg);
@@ -5176,7 +5210,7 @@ Responsive Menu Css
   transform: rotate(-10deg);
   animation: halfRotationAnimation 5s infinite ease-in-out;
 }
-.skill-area__one-left-video-play-btn {
+.skill-area__one-left-video-play-btn, .video-acceuil {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -5193,6 +5227,29 @@ Responsive Menu Css
   color: var(--bg-white);
   transition: 0.4s;
   cursor: pointer;
+}
+.video-acceuil {
+  position: absolute;
+  top: 94%;
+  left: 92%;
+  transform: translate(-50%, -50%);
+  width: 65px;
+  height: 65px;
+  text-align: center;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--primary-color-1);
+  border-radius: 50%;
+  font-size: 21px;
+  color: var(--bg-white);
+  transition: 0.4s;
+  cursor: pointer;
+}
+.video-acceuil:hover{
+  color: var(--primary-color-1);
+  background: var(--bg-white);
+  border: 1px solid var(--primary-color-1);
 }
 .skill-area__one-left-video-play-btn:hover {
   color: var(--primary-color-1);
@@ -5387,6 +5444,10 @@ Responsive Menu Css
 /*==========================================================================
 * Services One Style
 ==========================================================================*/
+.services__one{
+  background: var(--color-6);
+  background-image: url();
+}
 .services__one-title h2 {
   margin: auto;
   margin-bottom: 30px;
@@ -5900,7 +5961,7 @@ Responsive Menu Css
 * Portfolio One Style
 ==========================================================================*/
 .portfolio__one {
-  background: var(--color-1);
+  background: var(--color-6);
 }
 .portfolio__one .custom__container {
   max-width: 1745px;
@@ -6682,6 +6743,232 @@ Responsive Menu Css
   }
 }
 /*==========================================================================
+* Contact Acc CSS / Archange
+==========================================================================*/
+.contact__acc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 0;
+}
+
+.contact__acc .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contact__acc .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact__acc-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.contact__acc-title h2 {
+  text-transform: none;
+  margin-bottom: 30px;
+  text-align: center; /* Centrer le titre */
+}
+
+.contact__acc-title p {
+  color: var(--color-2);
+  margin-bottom: 35px;
+  text-transform: none;
+  text-align: center; /* Centrer le texte */
+}
+
+.contact__acc-form textarea {
+  margin-bottom: 30px;
+  height: 130px;
+}
+
+.contact__acc-form .btn-acc {
+  border-radius: 5px;
+  border: 1px solid var(--primary-color-1);
+}
+
+.contact__acc-contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centrer les informations de contact */
+  align-items: center;
+  gap: 30px; /* Espacement uniforme entre les items */
+}
+
+.contact__acc-single-info {
+  background-color: var(--color-1);
+  padding: 30px 5px;
+  border-radius: 5px;
+  transition: 0.4s;
+  text-align: center;
+  width: 45%;
+  margin-bottom: 28px;
+}
+
+.contact__acc-single-info-icon {
+  background-color: var(--bg-white);
+  width: 65px;
+  height: 65px;
+  border-radius: 5px;
+  margin: auto;
+  margin-bottom: 15px;
+  text-align: center;
+  line-height: 65px;
+}
+
+.contact__acc-single-info-content h4 {
+  font-size: 22px;
+  margin-bottom: 7px;
+}
+
+.contact__acc-single-info-content span {
+  color: var(--color-2);
+  display: block;
+  font-size: 14px;
+  text-transform: none;
+  margin-bottom: 7px;
+}
+
+.contact__acc-single-info-content span:last-child {
+  margin-bottom: 0;
+}
+
+.contact__acc-single-info:last-child {
+  margin-bottom: 0;
+}
+
+.contact__acc-single-info:nth-last-child(2) {
+  margin-bottom: 0;
+}
+
+.contact__acc-single-info:hover {
+  transform: translateY(-5px);
+}
+
+/* Media Queries for responsive design */
+@media (max-width: 1399px) {
+  .contact__acc-single-info {
+    width: 46%; /* Ajuster la largeur pour plus d'espace sur des écrans plus petits */
+  }
+}
+
+@media (max-width: 1199px) {
+  .contact__acc-single-info {
+    width: 35%;
+    padding: 30px 46px;
+  }
+}
+
+@media (max-width: 991px) {
+  .contact__acc-single-info {
+    width: 45%;
+  }
+}
+
+@media (max-width: 767px) {
+  .contact__acc-single-info {
+    width: 100%;
+    margin-bottom: 15px; /* Ajouter un peu de marge en bas */
+  }
+
+  .contact__acc-title h2 {
+    font-size: 24px; /* Taille de police plus petite sur mobile */
+  }
+
+  .contact__acc-title p {
+    font-size: 16px; /* Ajuster la taille du texte */
+  }
+
+  .contact__acc-form textarea {
+    width: 100%; /* S'assurer que le textarea prend toute la largeur */
+  }
+}
+/*==========================================================================
+* Form acc / Archange
+===========================================================================*/
+.contactacc__form-area-item{
+    padding: 0;
+}
+
+.contactacc__form-area-item input,
+.contactacc__form-area-item select,
+.contactacc__form-area-item textarea {
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid var(--border-color-2);
+    font-size: 14px;
+    appearance: none; /* Supprimer l'apparence native */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+
+.contactacc__form-area-item select {
+    appearance: none; /* Pour enlever le style par défaut des navigateurs */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.contactacc__form-area-item input[type="tel"] {
+    -webkit-appearance: input; /* S'assurer que le clavier pour le téléphone soit adapté sur mobile */
+}
+
+.contactacc__form-area-item textarea {
+    resize: vertical;
+    height: 150px;
+}
+/* Ajouter du style à la liste déroulante avec l'icône */
+.contactacc__form-area-item.custom-select {
+  position: relative;
+}
+
+.contactacc__form-area-item.custom-select select {
+  width: 100%;
+  padding: 15px 40px 15px 10px;
+  border-radius: 5px;
+  border: 1px solid var(--border-color-2);
+  font-size: 14px;
+  appearance: none; /* Supprimer l'apparence native */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.contactacc__form-area-item.custom-select i.fas {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: var(--primary-color-1);
+  pointer-events: none; /* L'icône ne doit pas interférer avec l'interaction */
+}
+
+/* Ajouter un style de focus pour la sélection */
+.contactacc__form-area-item.custom-select select:focus {
+  border-color: var(--primary-color-1); /* Changer la couleur de la bordure lorsque le champ est sélectionné */
+}
+
+.contactacc__two-right-form-item button{
+  width: 100%;
+  color: #080808;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;  
+}
+
+
+/*==========================================================================
 * Contact Location Map 
 ==========================================================================*/
 .location-map {
@@ -6882,14 +7169,18 @@ Responsive Menu Css
 * Why Choose Us three Style 
 ==========================================================================*/
 .why-choose-us__three {
-  background-color: var(--color-1);
+  background-color: var(--color-7);
+}
+.why-choose-us__three .subtitle-one{
+  color: var(--color-1);
 }
 .why-choose-us__three-title h2 {
+  color: var(--color-1);
   text-transform: none;
   margin-bottom: 30px;
 }
 .why-choose-us__three-title p {
-  color: var(--color-2);
+  color: var(--color-1);
   margin-bottom: 35px;
   text-transform: none;
   font-size: 17px;
@@ -9265,7 +9556,7 @@ Responsive Menu Css
   background-color: var(--primary-color-1);
   top: 0;
   left: 0;
-  opacity: 0.9;
+  opacity: 0.2;
 }
 .testimonial__one-left-title {
   z-index: 4;
@@ -10594,6 +10885,43 @@ Responsive Menu Css
   .footer__three-widget-solution {
     margin-left: 0;
   }
+}
+/*==========================================================================
+* Formation CSS - Archange
+============================================================================*/
+.formation-solution{
+  margin-left: 0px;
+}
+.formation-solution ul {
+  padding: 0;
+  margin: 0;
+}
+.formation-solution ul li {
+  padding: 0;
+  list-style: none;
+  margin-bottom: 21px;
+}
+.formation-solution ul li:last-child {
+  margin: 0;
+}
+.formation-solution ul li a {
+  color: var(--black);
+  transition: 0.4s;
+  position: relative;
+  font-size: 15px;
+}
+.formation-solution ul li a i {
+  color: var(--primary-color-1);
+  font-size: 14px;
+  margin-right: 10px;
+}
+.formation-solution ul li a:hover {
+  color: var(--primary-color-1);
+  padding-left: 10px;
+}
+.formation-solution h6 {
+  color: var(--text-white);
+  margin: 18px 0;
 }
 /*==========================================================================
 * Footer Four CSS

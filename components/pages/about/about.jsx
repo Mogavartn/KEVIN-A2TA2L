@@ -26,7 +26,7 @@ const AboutMain = () => {
                                         <h4 className="counter"><Count number={25}/></h4>
                                         <span>+</span>
                                     </div>
-                                    <span>Years Experience</span>
+                                    <span>Années d'expérience</span>
                                 </div>
                             </div>
                             <div className="about__one-image-wrapper">
@@ -37,7 +37,7 @@ const AboutMain = () => {
                     </div>
                     <div className="col-xl-6 col-lg-7 col-md-9">
                         <div className="about__one-content">
-                            <span className="subtitle-one">About us</span>
+                            <span className="subtitle-one">À propos de nous</span>
                             <h2>Transform Business to Technology</h2>
                             <p>IT Technology is a broad category encompassing all aspec information technology and the application of technology in various industries. It includes areas such as software development</p>
                             <div className="about__one-content-service">

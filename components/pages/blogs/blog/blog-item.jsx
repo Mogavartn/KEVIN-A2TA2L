@@ -16,11 +16,11 @@ const BlogItem = ({currentBlogItems}) => {
 						</div>
 						<div className="blog__two-single-blog-content">
 							<div className="blog__two-single-blog-content-top">
-								<span><i className="far fa-user"></i>by Admin</span>
+								<span><i className="far fa-user"></i>Administrateur</span>
 								<span><i className="far fa-comment-dots"></i>Comments ({data.comment})</span>
 							</div>
 							<Link href={`/blog/${data.id}`} className="blog__two-single-blog-content-title">{data.title}</Link>
-							<Link className="btn-three" href={`/blog/${data.id}`}>Read More<i className="fas fa-chevron-right"></i></Link> 
+							<Link className="btn-three" href={`/blog/${data.id}`}>En savoir plus<i className="fas fa-chevron-right"></i></Link> 
 						</div>
 					</div>
 				</div>

@@ -7,7 +7,7 @@ import AboutFour from "./about";
 import ServicesFour from "./services";
 import ChooseFour from "./choose";
 import Tab from "./tab/tab";
-import Video from "./video";
+import Video from "../home/video";
 import BlogFour from "./blog";
 import ScrollToTop from "../../common/scroll/scroll-to-top";
 
